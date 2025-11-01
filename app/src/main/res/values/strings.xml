@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My First Apps</string>
+    <string name="login_title">Form Login</string>
+    <string name="input_email_placeholder">Your email</string>
+    <string name="input_password_placeholder">Password</string>
+    <string name="login_agreement">Saya setuju dengan syarat dan ketentuan</string>
+    <string name="button_login_text">Login</string>
+
+    <string-array name="array_city">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+        <item>Medan</item>
+    </string-array>
+</resources>
