@@ -1,6 +1,8 @@
 package com.example.myfirstapps;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -18,8 +20,16 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         TextView txtWelcome = findViewById(R.id.txtWelcome);
-        String name = "Abdillah AG";
+        Button btnNext = findViewById(R.id.btnNext);
 
-        txtWelcome.setText("Hello, " + name + " Welcome back!");
+        String name = "Abdillah AG";
+        String activityTitle = "Second Activity";
+
+        txtWelcome.setText(activityTitle);
+        btnNext.setOnClickListener(v -> {
+            Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+            intent.putExtra("myName", name); // Kirim data antar activity dengan intent
+            startActivity(intent);
+        });
     }
 }
